@@ -1,192 +1,184 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE Ontology [
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/paola/ontologies/2016/PublicTransport"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Declaration>
-        <Class IRI="http://vocab.gtfs.org/terms#Agency"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://vocab.gtfs.org/terms#CalendarDateRule"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://vocab.gtfs.org/terms#CalendarRule"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://vocab.gtfs.org/terms#Route"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://vocab.gtfs.org/terms#Stop"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://vocab.gtfs.org/terms#StopTime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://vocab.gtfs.org/terms#TransferRule"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://vocab.gtfs.org/terms#Trip"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://vocab.gtfs.org/terms#routeType"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#hasRoute"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasCalendarDateRule"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasCalendarRule"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasRouteType"/>
-    </Declaration>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <ObjectProperty IRI="#hasStopTime"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTransferRule"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTrip"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#agency_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#arrivalTime"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#code"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#date"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#date_addition"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#departureTime"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#destinatioStop"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#direction"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#friday"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#headsign"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#minimumTransferTime"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#monday"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#routeUrl"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#route_color"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#route_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#route_type"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#saturday"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#service_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#stop_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#sunday"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#thursday"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#trip_id"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#tuesday"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#url"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#wednesday"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#EMT"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Aluche"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Calendar-LV"/>
+        <ObjectProperty IRI="#hasTrip"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CalendarRuleExceptionLV"/>
+        <DataProperty IRI="#route_type"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CasaDeCampo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ConcepciónJerónima"/>
+        <DataProperty IRI="#date_addition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ConcepciónJerónima-Aluche"/>
+        <DataProperty IRI="#headsign"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PlazaMayor"/>
+        <Class IRI="http://vocab.gtfs.org/terms#Trip"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PlazaMayor-Aluche"/>
+        <DataProperty IRI="#routeUrl"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PlazaMayor-ConcepciónJerónima"/>
+        <NamedIndividual IRI="#Calendar-LV"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RouteTypeBus"/>
+        <DataProperty IRI="#code"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#StopTime_ConcepciónJerónima-Aluche"/>
+        <NamedIndividual IRI="#TransferPlazaMayor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sunday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#agency_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.gtfs.org/terms#CalendarRule"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#arrivalTime"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#StopTime_PlazaMayor-ConcepciónJerónima"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TransferPlazaMayor"/>
+        <DataProperty IRI="#saturday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConcepciónJerónima-Aluche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RouteTypeBus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.gtfs.org/terms#Route"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tuesday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#departureTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.gtfs.org/terms#routeType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#monday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#destinatioStop"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransferRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.gtfs.org/terms#StopTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlazaMayor-Aluche"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#route_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#hasRoute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#service_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.gtfs.org/terms#TransferRule"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#route_color"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#EMT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCalendarDateRule"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlazaMayor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stop_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimumTransferTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConcepciónJerónima"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#trip_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.gtfs.org/terms#Stop"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlazaMayor-ConcepciónJerónima"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#friday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#thursday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.gtfs.org/terms#Agency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StopTime_ConcepciónJerónima-Aluche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CalendarRuleExceptionLV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRouteType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.gtfs.org/terms#CalendarDateRule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCalendarRule"/>
     </Declaration>
     <ClassAssertion>
         <Class IRI="http://vocab.gtfs.org/terms#Agency"/>
@@ -312,222 +304,222 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#agency_id"/>
         <NamedIndividual IRI="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#EMT"/>
-        <Literal datatypeIRI="&xsd;string">EMT</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EMT</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#EMT"/>
-        <Literal datatypeIRI="&xsd;string">Empresa Municipal de Transportes</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Empresa Municipal de Transportes</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#url"/>
         <NamedIndividual IRI="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#EMT"/>
-        <Literal datatypeIRI="&xsd;string">http://www.emtmadrid.es</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.emtmadrid.es</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#code"/>
         <NamedIndividual IRI="#Aluche"/>
-        <Literal datatypeIRI="&xsd;string">456</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">456</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="#Aluche"/>
-        <Literal datatypeIRI="&xsd;string">Aluche</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Aluche</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#stop_id"/>
         <NamedIndividual IRI="#Aluche"/>
-        <Literal datatypeIRI="&xsd;string">456</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">456</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#friday"/>
         <NamedIndividual IRI="#Calendar-LV"/>
-        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#monday"/>
         <NamedIndividual IRI="#Calendar-LV"/>
-        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#saturday"/>
         <NamedIndividual IRI="#Calendar-LV"/>
-        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#service_id"/>
         <NamedIndividual IRI="#Calendar-LV"/>
-        <Literal datatypeIRI="&xsd;string">LV</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LV</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#sunday"/>
         <NamedIndividual IRI="#Calendar-LV"/>
-        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#thursday"/>
         <NamedIndividual IRI="#Calendar-LV"/>
-        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#tuesday"/>
         <NamedIndividual IRI="#Calendar-LV"/>
-        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#wednesday"/>
         <NamedIndividual IRI="#Calendar-LV"/>
-        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#date"/>
         <NamedIndividual IRI="#CalendarRuleExceptionLV"/>
-        <Literal datatypeIRI="&xsd;dateTime">20151225</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">20151225</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#date_addition"/>
         <NamedIndividual IRI="#CalendarRuleExceptionLV"/>
-        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#service_id"/>
         <NamedIndividual IRI="#CalendarRuleExceptionLV"/>
-        <Literal datatypeIRI="&xsd;string">LV</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LV</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#code"/>
         <NamedIndividual IRI="#CasaDeCampo"/>
-        <Literal datatypeIRI="&xsd;string">457</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">457</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="#CasaDeCampo"/>
-        <Literal datatypeIRI="&xsd;string">Casa de Campo</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Casa de Campo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#stop_id"/>
         <NamedIndividual IRI="#CasaDeCampo"/>
-        <Literal datatypeIRI="&xsd;string">457</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">457</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#code"/>
         <NamedIndividual IRI="#ConcepciónJerónima"/>
-        <Literal datatypeIRI="&xsd;string">112</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">112</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="#ConcepciónJerónima"/>
-        <Literal datatypeIRI="&xsd;string">Concepción Jerónima</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Concepción Jerónima</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#stop_id"/>
         <NamedIndividual IRI="#ConcepciónJerónima"/>
-        <Literal datatypeIRI="&xsd;string">112</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">112</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#direction"/>
         <NamedIndividual IRI="#ConcepciónJerónima-Aluche"/>
-        <Literal datatypeIRI="&xsd;string">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#headsign"/>
         <NamedIndividual IRI="#ConcepciónJerónima-Aluche"/>
-        <Literal datatypeIRI="&xsd;string">Concepción Jerónima - Aluche</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Concepción Jerónima - Aluche</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#trip_id"/>
         <NamedIndividual IRI="#ConcepciónJerónima-Aluche"/>
-        <Literal datatypeIRI="&xsd;string">LV0310012</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LV0310012</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#code"/>
         <NamedIndividual IRI="#PlazaMayor"/>
-        <Literal datatypeIRI="&xsd;string">277</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">277</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="#PlazaMayor"/>
-        <Literal datatypeIRI="&xsd;string">Plaza Mayor</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Plaza Mayor</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#stop_id"/>
         <NamedIndividual IRI="#PlazaMayor"/>
-        <Literal datatypeIRI="&xsd;string">277</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">277</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="#PlazaMayor-Aluche"/>
-        <Literal datatypeIRI="&xsd;string">PlazaMayor-Aluche</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PlazaMayor-Aluche</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#routeUrl"/>
         <NamedIndividual IRI="#PlazaMayor-Aluche"/>
-        <Literal datatypeIRI="&xsd;string">http://www.emtmadrid.es/aplicaciones/Itinerarios.aspx?linea=31</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.emtmadrid.es/aplicaciones/Itinerarios.aspx?linea=31</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#route_color"/>
         <NamedIndividual IRI="#PlazaMayor-Aluche"/>
-        <Literal datatypeIRI="&xsd;string">FFD700</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FFD700</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#route_id"/>
         <NamedIndividual IRI="#PlazaMayor-Aluche"/>
-        <Literal datatypeIRI="&xsd;string">031</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">031</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#direction"/>
         <NamedIndividual IRI="#PlazaMayor-ConcepciónJerónima"/>
-        <Literal datatypeIRI="&xsd;string">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#headsign"/>
         <NamedIndividual IRI="#PlazaMayor-ConcepciónJerónima"/>
-        <Literal datatypeIRI="&xsd;string">Plaza Mayor-Concepción Jerónima</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Plaza Mayor-Concepción Jerónima</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#trip_id"/>
         <NamedIndividual IRI="#PlazaMayor-ConcepciónJerónima"/>
-        <Literal datatypeIRI="&xsd;string">LV0310011</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LV0310011</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="#RouteTypeBus"/>
-        <Literal datatypeIRI="&xsd;string">Bus</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bus</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#route_type"/>
         <NamedIndividual IRI="#RouteTypeBus"/>
-        <Literal datatypeIRI="&xsd;string">3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#arrivalTime"/>
         <NamedIndividual IRI="#StopTime_ConcepciónJerónima-Aluche"/>
-        <Literal datatypeIRI="&xsd;string">07:30:00</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">07:30:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#departureTime"/>
         <NamedIndividual IRI="#StopTime_ConcepciónJerónima-Aluche"/>
-        <Literal datatypeIRI="&xsd;string">07:35:00</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">07:35:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#arrivalTime"/>
         <NamedIndividual IRI="#StopTime_PlazaMayor-ConcepciónJerónima"/>
-        <Literal datatypeIRI="&xsd;string">07:00:00</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">07:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#departureTime"/>
         <NamedIndividual IRI="#StopTime_PlazaMayor-ConcepciónJerónima"/>
-        <Literal datatypeIRI="&xsd;string">07:05:00</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">07:05:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#destinatioStop"/>
         <NamedIndividual IRI="#TransferPlazaMayor"/>
-        <Literal datatypeIRI="&xsd;string">457</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">457</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#minimumTransferTime"/>
         <NamedIndividual IRI="#TransferPlazaMayor"/>
-        <Literal datatypeIRI="&xsd;int">10</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
     </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#hasRoute"/>
@@ -803,77 +795,102 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.gtfs.org/terms#Agency</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Agencia que provee el servicio de autobuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.gtfs.org/terms#Route</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ruta que tiene el autobus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.gtfs.org/terms#Stop</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Parada que hace el autobus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.gtfs.org/terms#StopTime</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tiempo en que el autobus pasa por la parada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.gtfs.org/terms#Trip</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recorrido del bus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#EMT</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Empresa de Transportes de Madrid</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Empresa de Transportes de Madrid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.semanticweb.org/paola/ontologies/2016/0/untitled-ontology-7#hasRoute</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasRoute</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasRoute</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Aluche</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Parada de bus Aluche</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Parada de bus Aluche</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Calendar-LV</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Servicio de bus disponible de Lunes a Viernes</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Servicio de bus disponible de Lunes a Viernes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CalendarRuleExceptionLV</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Este día no se contará con el servicio de bus</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Este día no se contará con el servicio de bus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ConcepciónJerónima</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Parada de bus Concepción Jerónima</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Parada de bus Concepción Jerónima</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ConcepciónJerónima-Aluche</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Viaje entre Concepción Jerónima - Aluche</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Viaje entre Concepción Jerónima - Aluche</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PlazaMayor</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Parada de bus Plaza Mayor</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Parada de bus Plaza Mayor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PlazaMayor-Aluche</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Ruta entre Plaza Mayor y Aluche</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ruta entre Plaza Mayor y Aluche</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PlazaMayor-ConcepciónJerónima</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Viaje entre Plaza Mayor - Concepción Jerónima </Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Viaje entre Plaza Mayor - Concepción Jerónima </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RouteTypeBus</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Tipo de ruta, en este caso es ruta de bus</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipo de ruta, en este caso es ruta de bus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#StopTime_ConcepciónJerónima-Aluche</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Tiempo en para de bus Concepción Jerónima</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tiempo en para de bus Concepción Jerónima</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#StopTime_PlazaMayor-ConcepciónJerónima</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Tiempo en para de bus Plaza Mayor</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tiempo en para de bus Plaza Mayor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TransferPlazaMayor</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Transferencias que se pueden hacer en la parada Plaza Mayor</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Transferencias que se pueden hacer en la parada Plaza Mayor</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
