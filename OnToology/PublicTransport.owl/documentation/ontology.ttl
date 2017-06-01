@@ -222,39 +222,48 @@
 #################################################################
 
 ###  http://vocab.gtfs.org/terms#Agency
-<http://vocab.gtfs.org/terms#Agency> rdf:type owl:Class .
+<http://vocab.gtfs.org/terms#Agency> rdf:type owl:Class ;
+                                     rdfs:comment "Agencia que provee el servicio de autobuses"^^xsd:string .
 
 
 ###  http://vocab.gtfs.org/terms#CalendarDateRule
-<http://vocab.gtfs.org/terms#CalendarDateRule> rdf:type owl:Class .
+<http://vocab.gtfs.org/terms#CalendarDateRule> rdf:type owl:Class ;
+                                               rdfs:comment "Excepciones en el calendario"^^xsd:string .
 
 
 ###  http://vocab.gtfs.org/terms#CalendarRule
-<http://vocab.gtfs.org/terms#CalendarRule> rdf:type owl:Class .
+<http://vocab.gtfs.org/terms#CalendarRule> rdf:type owl:Class ;
+                                           rdfs:comment "Reglas del calendario de Lunes a Viernes"^^xsd:string .
 
 
 ###  http://vocab.gtfs.org/terms#Route
-<http://vocab.gtfs.org/terms#Route> rdf:type owl:Class .
+<http://vocab.gtfs.org/terms#Route> rdf:type owl:Class ;
+                                    rdfs:comment "Ruta que tiene el autobus"^^xsd:string .
 
 
 ###  http://vocab.gtfs.org/terms#Stop
-<http://vocab.gtfs.org/terms#Stop> rdf:type owl:Class .
+<http://vocab.gtfs.org/terms#Stop> rdf:type owl:Class ;
+                                   rdfs:comment "Parada que hace el autobus"^^xsd:string .
 
 
 ###  http://vocab.gtfs.org/terms#StopTime
-<http://vocab.gtfs.org/terms#StopTime> rdf:type owl:Class .
+<http://vocab.gtfs.org/terms#StopTime> rdf:type owl:Class ;
+                                       rdfs:comment "Tiempo en que el autobus pasa por la parada"^^xsd:string .
 
 
 ###  http://vocab.gtfs.org/terms#TransferRule
-<http://vocab.gtfs.org/terms#TransferRule> rdf:type owl:Class .
+<http://vocab.gtfs.org/terms#TransferRule> rdf:type owl:Class ;
+                                           rdfs:comment "Reglas de transferencia entre las estaciones de bus"^^xsd:string .
 
 
 ###  http://vocab.gtfs.org/terms#Trip
-<http://vocab.gtfs.org/terms#Trip> rdf:type owl:Class .
+<http://vocab.gtfs.org/terms#Trip> rdf:type owl:Class ;
+                                   rdfs:comment "Recorrido del bus"^^xsd:string .
 
 
 ###  http://vocab.gtfs.org/terms#routeType
-<http://vocab.gtfs.org/terms#routeType> rdf:type owl:Class .
+<http://vocab.gtfs.org/terms#routeType> rdf:type owl:Class ;
+                                        rdfs:comment "tipo de ruta"^^xsd:string .
 
 
 #################################################################

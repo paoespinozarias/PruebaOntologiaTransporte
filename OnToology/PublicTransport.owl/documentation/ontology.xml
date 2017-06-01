@@ -383,63 +383,81 @@
     <!-- http://vocab.gtfs.org/terms#Agency -->
 
 
-    <owl:Class rdf:about="http://vocab.gtfs.org/terms#Agency"/>
+    <owl:Class rdf:about="http://vocab.gtfs.org/terms#Agency">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agencia que provee el servicio de autobuses</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://vocab.gtfs.org/terms#CalendarDateRule -->
 
 
-    <owl:Class rdf:about="http://vocab.gtfs.org/terms#CalendarDateRule"/>
+    <owl:Class rdf:about="http://vocab.gtfs.org/terms#CalendarDateRule">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excepciones en el calendario</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://vocab.gtfs.org/terms#CalendarRule -->
 
 
-    <owl:Class rdf:about="http://vocab.gtfs.org/terms#CalendarRule"/>
+    <owl:Class rdf:about="http://vocab.gtfs.org/terms#CalendarRule">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reglas del calendario de Lunes a Viernes</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://vocab.gtfs.org/terms#Route -->
 
 
-    <owl:Class rdf:about="http://vocab.gtfs.org/terms#Route"/>
+    <owl:Class rdf:about="http://vocab.gtfs.org/terms#Route">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruta que tiene el autobus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://vocab.gtfs.org/terms#Stop -->
 
 
-    <owl:Class rdf:about="http://vocab.gtfs.org/terms#Stop"/>
+    <owl:Class rdf:about="http://vocab.gtfs.org/terms#Stop">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parada que hace el autobus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://vocab.gtfs.org/terms#StopTime -->
 
 
-    <owl:Class rdf:about="http://vocab.gtfs.org/terms#StopTime"/>
+    <owl:Class rdf:about="http://vocab.gtfs.org/terms#StopTime">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiempo en que el autobus pasa por la parada</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://vocab.gtfs.org/terms#TransferRule -->
 
 
-    <owl:Class rdf:about="http://vocab.gtfs.org/terms#TransferRule"/>
+    <owl:Class rdf:about="http://vocab.gtfs.org/terms#TransferRule">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reglas de transferencia entre las estaciones de bus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://vocab.gtfs.org/terms#Trip -->
 
 
-    <owl:Class rdf:about="http://vocab.gtfs.org/terms#Trip"/>
+    <owl:Class rdf:about="http://vocab.gtfs.org/terms#Trip">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recorrido del bus</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://vocab.gtfs.org/terms#routeType -->
 
 
-    <owl:Class rdf:about="http://vocab.gtfs.org/terms#routeType"/>
+    <owl:Class rdf:about="http://vocab.gtfs.org/terms#routeType">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tipo de ruta</rdfs:comment>
+    </owl:Class>
     
 
 
